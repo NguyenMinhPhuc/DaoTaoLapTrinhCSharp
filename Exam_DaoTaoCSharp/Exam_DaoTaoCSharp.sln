@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp_01", "Windo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_01", "ClassLibrary_01\ClassLibrary_01.csproj", "{591CC5C6-464F-455F-8133-063BF11AD76F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project_UHFReader", "project_UHFReader\project_UHFReader.csproj", "{044FC373-6151-45D4-A952-F9D0AA12682E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{591CC5C6-464F-455F-8133-063BF11AD76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{591CC5C6-464F-455F-8133-063BF11AD76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{591CC5C6-464F-455F-8133-063BF11AD76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{044FC373-6151-45D4-A952-F9D0AA12682E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044FC373-6151-45D4-A952-F9D0AA12682E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044FC373-6151-45D4-A952-F9D0AA12682E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044FC373-6151-45D4-A952-F9D0AA12682E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
