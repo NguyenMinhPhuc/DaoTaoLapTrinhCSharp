@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BussinessLayer;
+using project_UHFReader.HeThong;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,10 +18,15 @@ namespace project_UHFReader
         {
             InitializeComponent();
         }
-
+        BLL_Systems db;
         private void Frm_Login_Load(object sender, EventArgs e)
         {
-
+            db = new BLL_Systems(Cls_Main.fileConnect);
+            if(db.CheckConnect()==false)
+            {
+                Frm_Connection frm_Connection = new Frm_Connection();
+                frm_Connection.ShowDialog();
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

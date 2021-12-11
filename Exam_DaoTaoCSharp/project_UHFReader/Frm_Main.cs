@@ -60,5 +60,17 @@ namespace project_UHFReader
             Frm_ChangedPassword frm_ChangedPassword = new Frm_ChangedPassword();
             frm_ChangedPassword.ShowDialog();
         }
+
+        private void frmExampleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Example frm_Example = new Frm_Example();
+            frm_Example.ShowDialog();
+        }
+
+        private void fromConnectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Connection frm_Connection = new Frm_Connection();
+            frm_Connection.ShowDialog();
+        }
     }
 }
