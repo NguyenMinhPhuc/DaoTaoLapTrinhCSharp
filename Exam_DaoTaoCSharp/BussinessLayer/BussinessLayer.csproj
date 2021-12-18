@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL_Category.cs" />
     <Compile Include="BLL_ChucVu.cs" />
     <Compile Include="BLL_Example.cs" />
     <Compile Include="BLL_GhiChu.cs" />

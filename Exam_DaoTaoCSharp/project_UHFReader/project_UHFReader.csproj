@@ -47,6 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cls_Main.cs" />
+    <Compile Include="Frm_Category_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Category_Main.Designer.cs">
+      <DependentUpon>Frm_Category_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Category_Modified.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Category_Modified.Designer.cs">
+      <DependentUpon>Frm_Category_Modified.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Example.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,12 @@
     <Compile Include="HeThong\Frm_ChangedPassword.Designer.cs">
       <DependentUpon>Frm_ChangedPassword.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Frm_Category_Main.resx">
+      <DependentUpon>Frm_Category_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Category_Modified.resx">
+      <DependentUpon>Frm_Category_Modified.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Example.resx">
       <DependentUpon>Frm_Example.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +153,24 @@
       <Project>{17de7b11-6e40-49aa-b0d2-72dcdb7214f2}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\add_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\close_window_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\delete_bin_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\refresh_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\save_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\update_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
