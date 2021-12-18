@@ -72,5 +72,13 @@ namespace project_UHFReader
             Frm_Connection frm_Connection = new Frm_Connection();
             frm_Connection.ShowDialog();
         }
+
+        private void mnuCategoryList_Click(object sender, EventArgs e)
+        {
+            Frm_Category_Main frm_Category_Main = new Frm_Category_Main();
+            frm_Category_Main.MdiParent = this;
+            frm_Category_Main.Dock = DockStyle.Fill;
+            frm_Category_Main.Show();
+        }
     }
 }

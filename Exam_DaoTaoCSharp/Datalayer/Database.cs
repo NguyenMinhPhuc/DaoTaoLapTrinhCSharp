@@ -12,12 +12,20 @@ namespace Datalayer
     {
         //Kết nối
         SqlConnection sqlConnection;
+        //ConnectionString-->Chuỗi kết nối
+        //State-->trạng thái kế nối
+        //Open()
+        //Close()
+        SqlCommand sqlCommand;
+        //Connection--> nhập doi tuong SqlConnection
+        //CommandText--> Sql Query, hoặc tên Store Procedure.
+        //CommandType--> Chỉnh định kiểu commandText: Text, Store Procedure
+        //CommandTimeOut-->Thời gian thực thi. gắn trị lớn 6000 (default : 30)
         //Thực thi thủ tục sql
         //1. ExcuteNonQuery (insert, update, delete)
         //2. ExcuteReader(select)
         //3. ExcuteScalar (select <-- 1 gia tri)
         //4. ExcuteXMLReader (xml<--Select)
-        SqlCommand sqlCommand;
         //thuc thi thu tuc tra ve dataset or dataTable
         SqlDataAdapter dataAdapter;
 
@@ -79,6 +87,7 @@ namespace Datalayer
                     
                 }
                 rows= sqlCommand.ExecuteNonQuery();
+                
             }
             catch (Exception ex)
             {

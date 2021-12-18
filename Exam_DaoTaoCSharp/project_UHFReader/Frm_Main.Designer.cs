@@ -34,13 +34,14 @@ namespace project_UHFReader
             this.mnuBackup = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuChangpassword = new System.Windows.Forms.ToolStripMenuItem();
             this.nmuExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.fromConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.functionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.frmExampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblThongTinUser = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.functionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.frmExampleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuLogout = new System.Windows.Forms.ToolStripMenuItem();
-            this.fromConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCategoryList = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -71,22 +72,45 @@ namespace project_UHFReader
             // mnuBackup
             // 
             this.mnuBackup.Name = "mnuBackup";
-            this.mnuBackup.Size = new System.Drawing.Size(180, 22);
+            this.mnuBackup.Size = new System.Drawing.Size(175, 22);
             this.mnuBackup.Text = "backup - resotre";
             this.mnuBackup.Click += new System.EventHandler(this.mnuBackup_Click);
             // 
             // mnuChangpassword
             // 
             this.mnuChangpassword.Name = "mnuChangpassword";
-            this.mnuChangpassword.Size = new System.Drawing.Size(180, 22);
+            this.mnuChangpassword.Size = new System.Drawing.Size(175, 22);
             this.mnuChangpassword.Text = "Changed password";
             this.mnuChangpassword.Click += new System.EventHandler(this.mnuChangpassword_Click);
             // 
             // nmuExit
             // 
             this.nmuExit.Name = "nmuExit";
-            this.nmuExit.Size = new System.Drawing.Size(180, 22);
+            this.nmuExit.Size = new System.Drawing.Size(175, 22);
             this.nmuExit.Text = "Exit";
+            // 
+            // fromConnectionToolStripMenuItem
+            // 
+            this.fromConnectionToolStripMenuItem.Name = "fromConnectionToolStripMenuItem";
+            this.fromConnectionToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.fromConnectionToolStripMenuItem.Text = "From Connection";
+            this.fromConnectionToolStripMenuItem.Click += new System.EventHandler(this.fromConnectionToolStripMenuItem_Click);
+            // 
+            // functionToolStripMenuItem
+            // 
+            this.functionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.frmExampleToolStripMenuItem,
+            this.mnuCategoryList});
+            this.functionToolStripMenuItem.Name = "functionToolStripMenuItem";
+            this.functionToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.functionToolStripMenuItem.Text = "Function";
+            // 
+            // frmExampleToolStripMenuItem
+            // 
+            this.frmExampleToolStripMenuItem.Name = "frmExampleToolStripMenuItem";
+            this.frmExampleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.frmExampleToolStripMenuItem.Text = "Frm_Example";
+            this.frmExampleToolStripMenuItem.Click += new System.EventHandler(this.frmExampleToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -112,36 +136,21 @@ namespace project_UHFReader
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(118, 21);
             this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
             // 
-            // functionToolStripMenuItem
-            // 
-            this.functionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.frmExampleToolStripMenuItem});
-            this.functionToolStripMenuItem.Name = "functionToolStripMenuItem";
-            this.functionToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.functionToolStripMenuItem.Text = "Function";
-            // 
-            // frmExampleToolStripMenuItem
-            // 
-            this.frmExampleToolStripMenuItem.Name = "frmExampleToolStripMenuItem";
-            this.frmExampleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.frmExampleToolStripMenuItem.Text = "Frm_Example";
-            this.frmExampleToolStripMenuItem.Click += new System.EventHandler(this.frmExampleToolStripMenuItem_Click);
-            // 
             // mnuLogout
             // 
             this.mnuLogout.Image = global::project_UHFReader.Properties.Resources.logout_rounded_left_32px;
             this.mnuLogout.Name = "mnuLogout";
             this.mnuLogout.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
-            this.mnuLogout.Size = new System.Drawing.Size(180, 22);
+            this.mnuLogout.Size = new System.Drawing.Size(175, 22);
             this.mnuLogout.Text = "&Logout";
             this.mnuLogout.Click += new System.EventHandler(this.mnuLogout_Click);
             // 
-            // fromConnectionToolStripMenuItem
+            // mnuCategoryList
             // 
-            this.fromConnectionToolStripMenuItem.Name = "fromConnectionToolStripMenuItem";
-            this.fromConnectionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fromConnectionToolStripMenuItem.Text = "From Connection";
-            this.fromConnectionToolStripMenuItem.Click += new System.EventHandler(this.fromConnectionToolStripMenuItem_Click);
+            this.mnuCategoryList.Name = "mnuCategoryList";
+            this.mnuCategoryList.Size = new System.Drawing.Size(180, 22);
+            this.mnuCategoryList.Text = "Category list";
+            this.mnuCategoryList.Click += new System.EventHandler(this.mnuCategoryList_Click);
             // 
             // Frm_Main
             // 
@@ -180,6 +189,7 @@ namespace project_UHFReader
         private System.Windows.Forms.ToolStripMenuItem functionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem frmExampleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fromConnectionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuCategoryList;
     }
 }
 
